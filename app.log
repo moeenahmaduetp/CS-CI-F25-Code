@@ -1,0 +1,51 @@
+INFO:root:PDF handler already done
+INFO:root:creating the vectordb instance
+INFO:chromadb.telemetry.product.posthog:Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+DEBUG:chromadb.config:Starting component System
+DEBUG:chromadb.config:Starting component Posthog
+INFO:root:searching in the vector_db based on user query
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): us.i.posthog.com:443
+DEBUG:urllib3.connectionpool:https://us.i.posthog.com:443 "POST /batch/ HTTP/1.1" 200 15
+INFO:root:calling the llm with reference data based on user query
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): us.i.posthog.com:443
+DEBUG:urllib3.connectionpool:https://us.i.posthog.com:443 "POST /batch/ HTTP/1.1" 200 15
+INFO:root:PDF handler already done
+INFO:root:creating the vectordb instance
+INFO:chromadb.telemetry.product.posthog:Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+DEBUG:chromadb.config:Starting component System
+DEBUG:chromadb.config:Starting component Posthog
+INFO:root:searching in the vector_db based on user query
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): us.i.posthog.com:443
+INFO:root:calling the llm with reference data based on user query
+DEBUG:urllib3.connectionpool:https://us.i.posthog.com:443 "POST /batch/ HTTP/1.1" 200 15
+INFO:root:PDF handler already done
+INFO:root:creating the vectordb instance
+INFO:chromadb.telemetry.product.posthog:Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+DEBUG:chromadb.config:Starting component System
+DEBUG:chromadb.config:Starting component Posthog
+INFO:root:searching in the vector_db based on user query
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): us.i.posthog.com:443
+INFO:root:calling the llm with reference data based on user query
+DEBUG:urllib3.connectionpool:https://us.i.posthog.com:443 "POST /batch/ HTTP/1.1" 200 15
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'headers': {'X-Stainless-Raw-Response': 'true'}, 'files': None, 'idempotency_key': 'stainless-python-retry-84d0d0ba-4dab-4e11-aa07-b9ea9b763fb4', 'json_data': {'messages': [{'content': 'You are a helpful assistant, response userquery in simple words based on the reference data.', 'role': 'system'}, {'content': 'UserQuestion: What is hydrogen? and Reference Data: f\nootprint than liquid diesel due to the density of hydrogen. It is estimated that up to two to three\n4.7 Hydrogen Storage \nMost of the scenarios described in the report would require considerable amounts of hydrogen \nstorage. It is expected most sites would incorporate some hydrogen storage into the system even \nwith on-site generation from natural gas or electrolysis. This would be done so there were \nreserves during on-site generation outages, pipeline problems, or other supply issues.  \nThere were several options discussed for gaseous and liquid hydrogen storage. These included \ntankers, cryogenic storage, liquid organic hydrogen carriers, and geologic storage. Alternative \nfuture methods could include metal hydrides or other chemical storage options.  \nSeveral factors must be considered for hydrogen storage, such as storage capacity, footprint, and \ncost. Delivered hydrogen would have trade-offs due to size and frequency of deliveries, as well \nas the quantity needed for 24–72 hours of backup power. Each storage mechanism has unique\nelements and challenges to it. For example, the cost of hydrogen could be a considerably smaller \nfactor than the cost of the storage vessels themselves. Other bulk storage options are discussed \nbelow. \n• Gaseous tank storage would require a large footprint, especially when compared to \nhigher-density liquid fuels. This type of storage could be appropriate for backup power, \nbut the footprint and cost required for prime power could be prohibitive.  \n• Cryogenic tanks for liquid hydrogen storage could be suitable for large quantities beyond \n500 kg of hydrogen. However, boil-off effects would need to be considered. The cost of \nstorage, including land, was estimated to be at least $650/kg of hydrogen.\n', 'role': 'user'}], 'model': 'gemini-2.5-flash', 'stream': False, 'temperature': 0.2}}
+DEBUG:openai._base_client:Sending HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+DEBUG:httpcore.connection:connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+DEBUG:urllib3.connectionpool:https://us.i.posthog.com:443 "POST /batch/ HTTP/1.1" 200 15
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11aa601a0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x11a197800> server_hostname='generativelanguage.googleapis.com' timeout=None
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11a12a5d0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json'), (b'P3P', b'CP="This is not a P3P policy! See g.co/p3phelp for more info."'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Mon, 13 Oct 2025 19:04:47 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=2430'), (b'Set-Cookie', b'NID=525=Z-wSjnAeEWCIArkr91D-FaTZvfZ0L5mLGcyrrlhXeJr3urcBFZkaV6fkAPWa3m4IDFrirxqyo1aYw1EOFeizsxQBNml7IXzFmY0hXL3tV2HYxbqWE8dnXu9SFdjuQJXFvUK3XJVKhTJKeXGhAe42vS8Ovqk7odogocp6kwrCrr7aMe0c-14Y; expires=Tue, 14-Apr-2026 19:04:46 GMT; path=/; domain=.generativelanguage.googleapis.com; HttpOnly'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Expires', b'Mon, 13 Oct 2025 19:04:47 GMT'), (b'Cache-Control', b'private'), (b'Transfer-Encoding', b'chunked')])
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Response: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "200 OK" Headers([('content-type', 'application/json'), ('p3p', 'CP="This is not a P3P policy! See g.co/p3phelp for more info."'), ('vary', 'Origin'), ('vary', 'X-Origin'), ('vary', 'Referer'), ('content-encoding', 'gzip'), ('date', 'Mon, 13 Oct 2025 19:04:47 GMT'), ('server', 'scaffolding on HTTPServer2'), ('x-xss-protection', '0'), ('x-frame-options', 'SAMEORIGIN'), ('x-content-type-options', 'nosniff'), ('server-timing', 'gfet4t7; dur=2430'), ('set-cookie', 'NID=525=Z-wSjnAeEWCIArkr91D-FaTZvfZ0L5mLGcyrrlhXeJr3urcBFZkaV6fkAPWa3m4IDFrirxqyo1aYw1EOFeizsxQBNml7IXzFmY0hXL3tV2HYxbqWE8dnXu9SFdjuQJXFvUK3XJVKhTJKeXGhAe42vS8Ovqk7odogocp6kwrCrr7aMe0c-14Y; expires=Tue, 14-Apr-2026 19:04:46 GMT; path=/; domain=.generativelanguage.googleapis.com; HttpOnly'), ('alt-svc', 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), ('expires', 'Mon, 13 Oct 2025 19:04:47 GMT'), ('cache-control', 'private'), ('transfer-encoding', 'chunked')])
+DEBUG:openai._base_client:request_id: None
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
